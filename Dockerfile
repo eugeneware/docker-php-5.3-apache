@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM buildpack-deps:jessie
 MAINTAINER Eugene Ware <eugene@noblesamurai.com>
 
 RUN apt-get update && apt-get install -y curl && rm -r /var/lib/apt/lists/*
