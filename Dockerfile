@@ -73,7 +73,7 @@ RUN set -x \
 COPY docker-php-* /usr/local/bin/
 COPY apache2-foreground /usr/local/bin/
 
-WORKDIR /var/www/html
+WORKDIR /home/site/wwwroot
 
 EXPOSE 80
 CMD ["apache2-foreground"]
